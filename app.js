@@ -37,7 +37,6 @@ window.onload = function () {
 				var imgSrc = document.getElementById(ev.dataTransfer.getData("src"));
 				var imgParent = imgSrc.parentNode;
 				var target = ev.currentTarget.firstElementChild;
-
 				ev.currentTarget.replaceChild(imgSrc, target);
 				imgParent.appendChild(target);
 			});
@@ -65,5 +64,8 @@ window.onload = function () {
 	createGrid();
 
 };
+
+
+
 
 
